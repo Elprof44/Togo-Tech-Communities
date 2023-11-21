@@ -1,6 +1,5 @@
 from flask import Flask , render_template,request,url_for,redirect
 import random , os
-from difflib import get_close_matches as commpare
 import sqlite3
 
 
@@ -77,4 +76,4 @@ def addone():
     return render_template("compo.html",datas = datas)
 
 if "__main__" == __name__:
-    app.run(debug=True, port=8808)
+    app.run()
