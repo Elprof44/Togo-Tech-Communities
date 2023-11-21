@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/assets/css/style.css">
+  <link rel="stylesheet" href="static/assets/css/boxicons.min.css">
+  <link rel="stylesheet" href="static/assets/css/ouput.css">
+  <link rel="stylesheet" href="static/assets/css/Tailwind.min.css">
+  <link rel="shortcut icon" href="static/assets/fonts/icono.png" type="image/x-icon">
+  <script src="static/assets/js/htmx.min.js"></script>
+  <title>Togo Tech Communities</title>
+</head>
+
+<body class="bg-gray-900 text-white duration-300 overflow-x-hidden h-screen">
+  <nav class="flex justify-between items-center p-3 sticky top-0 bg-gray-700 duration-300">
+    <div>
+      <a class="flex items-center font-bold lg:text-xl text-gray-800" href="{{url_for('home')}}">
+        <span><img src="static/assets/fonts/icono.png" width="20" alt=""></span>
+        <span class="ml-2 text-white"><span
+            class="text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text">Tech</span>
+          Communities</span>
+      </a>
+    </div>
+    <ul class="flex items-center ">
+      <li><button id="darkmode"
+          class="text-xl bg-blue-500 border h-8 w-8 rounded-full p-2 flex justify-center items-center duration-300"><i
+            class='bx bxs-chat' id=""></i></button></li>
+      <a href="#"
+        class="flex ml-3 bg-gradient-to-r from-red-600 to-blue-600 text-white rounded-md font-semibold p-1 items-center hover:from-blue-600 hover:to-red-600 hover:duration-300 text-xs lg:text-lg">
+        <span class="relative top-0.5 text-xl"><i class='bx bx-git-repo-forked'></i></span>
+        <span class="ml-1">Add Project</span>
+      </a>
+    </ul>
+  </nav>
+  <main>
+    <div class="flex flex-col gap-4">
+      <div class="mt-10">
+        <div class="text-neutral-200 flex justify-center items-center text-center m-5">
+          <p><span class="text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-lg">Tech
+              Communities</span> is a collection of
+            beautiful community with all
+            their on touch link for easy way de contact
+            This Project is open-source & community Project.
+            Currently, we're looking for contributors for the
+            <a target="_blank"
+              class="font-bold text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 text-primary-400 hover:text-primary-500 focus:text-primary-500 active:text-primary-600"
+              href="">This Project</a>
+            repository. If you're interested in contributing, please open
+            your pull request on GitHub & contact us.
+          </p>
+        </div>
+        <hr class="mt-10 mb-2 bg-white" />
+      </div>
+      <div class="md:grid grid-cols-2 gap-4 ">
+        <!-- second -->
+        <div class="flex justify-start flex-col items-center m-4">
+          <p>Step 1: <strong>Join our community</strong>. We're'
+            <strong>waiting for you</strong>!
+          </p>
+          <div class="mt-4 bg-blue-500 rounded hover:bg-blue-600 w-72 text-center mx-4 md:w-3/6" data-modal-trigger
+            aria-controls="modal-name" aria-expanded="false" type="button">
+            <a data-modal-trigger aria-controls="modal-name" aria-expanded="false" type="button"
+              class="inline-block w-[300px] rounded bg-primary-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white ">
+              QUICK START ADD
+            </a>
+          </div>
+          <div class="mt-4 bg-gray-300 rounded hover:bg-gray-400 w-72 text-center mx-4 md:w-3/6">
+            <a href="" target="_blank"
+              class="inline-block w-[300px] rounded bg-primary-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-blue-600 ">
+              GO TO contribut ON GITHUB
+            </a>
+          </div>
+          <div class="mt-4 bg-gray-300 rounded hover:bg-gray-400 w-72 text-center mx-4 md:w-3/6">
+            <a href="" target="_blank"
+              class="inline-block w-[300px] rounded bg-primary-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-blue-600 ">
+              STAR US ON GITHUB
+            </a>
+          </div>
+          <div class="mt-4 bg-gray-300 rounded hover:bg-gray-400 w-72 text-center mx-4 md:w-3/6">
+            <a href="" target="_blank"
+              class="inline-block w-[300px] rounded bg-primary-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-blue-600">
+              JOIN TELEGRAM as a member
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-start flex-col items-center m-4 ">
+          <p>Step 2: Check Other Tech Communities from other countries</p>
+          <div class="mt-4 bg-blue-500 rounded hover:bg-blue-600 w-72 text-center mx-4 md:w-3/6">
+            <a href="https://rdc-tech-communities.vercel.app/" target=" _blank" class="inline-block font-medium text-xs px-6 pb-2 pt-2.5 rounded text-white text-transparent
+               bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text  leading-norma w-72 ">
+              RdcTechCommunities
+            </a>
+          </div>
+          <div class="mt-4 bg-gray-300 rounded hover:bg-gray-400 w-72 text-center mx-4 md:w-3/6">
+            <a href="" target="_blank"
+              class="inline-block w-[300px] rounded bg-primary-700 px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-blue-600 ">
+              TogoTechCommunities
+            </a>
+          </div>
+          <div class="mt-4 bg-gray-300 rounded hover:bg-gray-400 w-72 text-center mx-4 md:w-3/6">
+            <a href="" target="_blank"
+              class="inline-block font-medium text-xs px-6 pb-2 pt-2.5 rounded text-blue-600 leading-norma uppercase w-72 ">
+              coming soon
+            </a>
+          </div>
+          <div class="mt-4 bg-gray-300 rounded hover:bg-gray-400 w-72 text-center mx-4 md:w-3/6">
+            <a href="" target="_blank"
+              class="inline-block w-[300px] rounded bg-primary-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-blue-600 ">
+              coming soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="justify-center mt-5 p-5 sticky bottom-0 bg-gray-800 duration-300">
+    <h1 class="flex flex-col lg:flex-row items-center justify-center text-center">
+      <p>
+
+      </p>
+      <!-- <span class="text-gray-700">Proudly made by </span>
+      <a href="https://www.linkedin.com/in/likeur-off-47984327a/" class="flex items-center ml-2">
+        <span><img
+            src="https://media.licdn.com/dms/image/D4D03AQFUf8XXyZiZmQ/profile-displayphoto-shrink_200_200/0/1689182733552?e=1705536000&v=beta&t=HdFEsfPX6FMrlzaa3jySKVPnckXKcyM0uJgFQ6kKLGA"
+            width="20" class="rounded-full" alt=""></span>
+        <span class="ml-2 font-semibold underline text-white">Likeur off</span>
+      </a> -->
+    </h1>
+  </section>
+  <div id="modal-name" data-modal-target class="hidden w-full ">
+    <div class="flex items-center justify-center fixed inset-0 z-50 w-full">
+      <div data-modal-close data-modal-overlay tabindex="-1" data-class-in="opacity-50" data-class-out="opacity-0"
+        class="opacity-0 fixed inset-0 w-full z-40 transition-opacity duration-300 bg-black select-none"></div>
+      <div data-modal-wrapper data-class-in="opacity-100 translate-y-0" data-class-out="opacity-0 translate-y-5" class="opacity-0 translate-y-5 w-full z-50 overflow-auto max-w-md max-h-screen scrolling-touch 
+        transition-all duration-300 bg-white  text-black flex flex-col transform shadow-xl rounded-md m-5">
+        <div class="flex items-center justify-between border-b p-3">
+          <h3>
+            ADD
+          </h3>
+          <button data-modal-close aria-label="Close" type="button"
+            class="text-gray-700 hover:text-black focus:text-black transition ease-in-out duration-150 ml-auto">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            <span class="sr-only">Close</span>
+          </button>
+        </div>
+        <div class="relative overflow-x-hidden overflow-y-auto h-full flex-grow p-5 ">
+          <form action="{{ url_for('add')}}" method="post" enctype="multipart/form-data">
+            <div class="grid gap-6 mb-6 md:grid-cols-2 justify-center items-center text-center">
+              <div>
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">community
+                  name</label>
+                <input type="text" id="first_name" name="name"
+                  class="bg-gray-50 border border-gray-300 text-center text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="e.g: OpenIoTfly" required>
+              </div>
+              <div>
+                <label for="last_name"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Image</label>
+                <input type="file" name="image"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="e.g:image file 400 * 600" accept=".jpg, .jpeg, .png, .svg">
+              </div>
+              <div>
+                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tag</label>
+                <input type="text" id="file" name="tag"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="e.g:Flutter,Design,IA ... " required>
+              </div>
+              <div class="text-center">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">About</label>
+                <input type="text" name="about"
+                  class="bg-gray-50 border pl-5 border-gray-300 text-gray-900 text-sm 
+                  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="e.g: Creating solutions and sharing knowledge." required>
+              </div>
+            </div>
+            <div class="grid gap-6 mb-6 md:grid-cols-2 justify-center items-center text-center ">
+              <div>
+                <label for="linkedin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Linkedin
+                  Link</label>
+                <input type="text" id="company" name="linkedin"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="linkedin.com/company/devcom-upl/mycompany/">
+              </div>
+              <div>
+                <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website
+                  URL</label>
+                <input type="url" id="website" name="website"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="openiotfly.com">
+              </div>
+              <div>
+                <label for="github" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">GitHub
+                  Link</label>
+                <input type="text" id="company" name="github"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="github.com/espacesis">
+              </div>
+              <div>
+                <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Youtube
+                  Link</label>
+                <input type="url" id="website" name="youtube"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="youtube.com/@Developpercommunity_upl">
+              </div>
+              <div>
+                <label for="Whatsapp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Whatsapp
+                  Link</label>
+                <input type="text" id="company" name="whatsapp"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="chat.whatsapp.com//mycompany/">
+              </div>
+              <div>
+                <label for="X" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">X
+                  Link</label>
+                <input type="url" id="website" name="x"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="x.com/Developpercommunity_upl">
+              </div>
+              <div>
+                <label for="facebook" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Facebook
+                  Link</label>
+                <input type="text" id="website" name="facebook"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="facebook.com/profile.php">
+              </div>
+              <div>
+                <label for="Tele" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telegram
+                  Link</label>
+                <input type="url" id="website" name="telegram"
+                  class="bg-gray-50 border border-gray-300 pl-5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="telegram.me/@Developpercommunity_upl">
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+                focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 
+                text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function filterCards(category) {
+      const cards = document.querySelectorAll('.card');
+      if (category === 'all') {
+        cards.forEach(card => {
+          card.style.display = 'block';
+        });
+      } else {
+        cards.forEach(card => {
+          if (card.classList.contains(category)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    }
+    // Affiche toutes les cartes par défaut
+    filterCards('all');
+  </script>
+  <script src="static/assets/js/modal.js"></script>
+
+</body>
+
+</html>
