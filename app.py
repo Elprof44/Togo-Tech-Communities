@@ -75,5 +75,5 @@ def addone():
     datas= [dict(d) for d in result.fetchall()]
     return render_template("compo.html",datas = datas)
 
-if "__main__" == __name__:
+if  __name__ == "__main__" :
     app.run()
