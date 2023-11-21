@@ -1,5 +1,5 @@
 from flask import Flask , render_template,request,url_for,redirect
-import random , os
+import random
 import sqlite3
 
 
@@ -17,10 +17,10 @@ def allowed_file(image):
     extansion = image.filename.split(".")[-1].lower()
     if "." in image.filename and extansion in allowed_exta:
         filename = (f'aa_{random.randint(1,1000)}{random.randint(1000,10000)}_community_image.{extansion}')
-        image.save(os.path.join(app.config["UPLOAD_FOLDER"],filename))
-        return os.path.join(app.config["UPLOAD_FOLDER"],filename)
+        image.save(f'{app.config["UPLOAD_FOLDER"]}{filename}')
+        return f'{app.config["UPLOAD_FOLDER"]}{filename}'
     else:
-        return os.path.join(app.config["UPLOAD_FOLDER"],"1.jpg")
+        return f'{app.config["UPLOAD_FOLDER"]}{"1.jpg"}'
 
 
 @app.route('/')
@@ -39,7 +39,7 @@ def add():
             image = request.files.get("image")
             filename = allowed_file(image)
         else:
-            filename = os.path.join(app.config["UPLOAD_FOLDER"],"1.jpg")
+            filename = f'{app.config["UPLOAD_FOLDER"]}{"1.jpg"}'
         linkedin = request.form.get("linkedin")
         website = request.form.get("website")
         github = request.form.get("github")
