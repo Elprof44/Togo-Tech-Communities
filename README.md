@@ -10,7 +10,7 @@ Ce projet a pour but de mettre à la dispositions des tout le monde, des informa
 - Python 3
 - Sqlite3
 
-Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajouter directement sur le site web vous même via ce lien  `fork`  ou
+Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajouter directement sur le site web vous même via ce lien  `https://togo-tech-communities.onrender.com/addone`  ou
  via un PR ou faite le moi savoir pour que je l'ajoute.
 
 ## Ajout de la communauté par PR
@@ -18,7 +18,7 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
 - Les Etapes :
 
   - Forker ce repo en appuyant sur le bouton `fork`
-  - Cloner le repo sur votre machine avec `git clone https://github.com/Likeur/RdcTechCommunities.git`
+  - Cloner le repo sur votre machine avec `git clone https://github.com/Elprof44/Togo-Tech-Communities.git`
 
   - Creer une nouvelle Branche avec `git Branch nom_de_la_branche`
   - Switcher vers la nouvelle branche avec `git checkout votre_branche`
