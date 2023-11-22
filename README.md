@@ -1,4 +1,4 @@
-# RdcTechCommunities
+# Togo-Tech-Communities
 
 Ce projet a pour but de mettre à la dispositions des tout le monde, des informations sur les communauté Technologiques du Togo, des infos commes leur site web, les differents liens de leurs comptes sur les reseaux sociaux ainsi que leurs github pour certains.
 
@@ -22,7 +22,7 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
 
   - Creer une nouvelle Branche avec `git Branch nom_de_la_branche`
   - Switcher vers la nouvelle branche avec `git checkout votre_branche`
-  - Naviguer vers le dossier cloné avec `cd RdcTechCommunities`
+  - Naviguer vers le dossier cloné avec `cd Togo-Tech-Communities`
   - L'ouvrir avec vs code ou votre éditeur de text preféré
   - Naviguer vers le dossier `static/assets/communities`
 
